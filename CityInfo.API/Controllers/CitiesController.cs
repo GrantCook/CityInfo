@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CityInfo.API.Controllers
 {
+    [Route("api/cities")]
     public class CitiesController:Controller
     {
         public JsonResult GetCities()
