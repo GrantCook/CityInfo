@@ -11,10 +11,7 @@ namespace CityInfo.API.Controllers
     {
         public JsonResult GetCities()
         {
-            return  new JsonResult(new List<object>()
-            {
-                new {id=1, Name="New City"}
-            });
+            return new JsonResult(CitiesDataStore.Current.Cities);
         }
     }
 }
