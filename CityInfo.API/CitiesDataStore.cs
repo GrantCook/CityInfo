@@ -21,7 +21,22 @@ namespace CityInfo.API
                 {
                     Id = 1,
                     Name = "New York City",
-                    Description="The on with that big park."
+                    Description="The on with that big park.",
+                    PointsOfInterest = new List<PointOfInterestDto>()
+                    {
+                        new PointOfInterestDto()
+                        {
+                            Id = 1,
+                            Name = "Central Park",
+                            Description = "THe most visited urban park in the United States"
+                        },
+                        new PointOfInterestDto()
+                        {
+                            Id=2,
+                            Name = "Empire State Building",
+                            Description = "A 102-story skyscraper located in the Midtown Manhattan."
+                        }
+                    }
                 },
                 new CityDto()
                 {
